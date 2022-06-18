@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:780480718657:android:a3bbbf7fec3fa7fd8e63c0",
+        "mobilesdk_app_id": "1:780480718657:android:9cb6c4638a81468b8e63c0",
         "android_client_info": {
-          "package_name": "dev.bisi"
+          "package_name": "dev.bisi.black"
         }
       },
       "oauth_client": [
