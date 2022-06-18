@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:black/screens/intro_screen.dart';
+import 'package:black/screens/registration_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main (){
+void main () async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const BlackApp());
 }
 
@@ -13,7 +17,8 @@ class BlackApp extends StatelessWidget {
     return MaterialApp(
       initialRoute: IntroScreen.id,
       routes: {
-        IntroScreen.id: (context) => IntroScreen(),
+        IntroScreen.id: (context) => const IntroScreen(),
+        RegistrationScreen.id: (context) => const RegistrationScreen(),
       },
     );
   }

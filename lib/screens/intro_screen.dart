@@ -1,3 +1,4 @@
+import 'package:black/screens/registration_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:black/core/app_export.dart';
 
@@ -20,7 +21,7 @@ class _IntroScreenState extends State<IntroScreen>
 
     controller =
         AnimationController(duration: const Duration(seconds: 1), vsync: this);
-    animation = ColorTween(begin: Colors.blueGrey, end: Colors.white)
+    animation = ColorTween(begin: kLogoGradDark, end: kWhite)
         .animate(controller!);
     controller!.forward();
     controller!.addListener(() {
@@ -62,6 +63,7 @@ class _IntroScreenState extends State<IntroScreen>
               title: 'Register',
               colour: kLogoGradDark,
               onPressed: () {
+                Navigator.pushNamed(context, RegistrationScreen.id);
               },
             ),
           ],
