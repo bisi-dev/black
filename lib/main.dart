@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+
 import 'package:black/screens/intro_screen.dart';
 import 'package:black/screens/registration_screen.dart';
-import 'package:firebase_core/firebase_core.dart';
+import 'package:black/screens/login_screen.dart';
 
 void main () async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -19,6 +21,7 @@ class BlackApp extends StatelessWidget {
       routes: {
         IntroScreen.id: (context) => const IntroScreen(),
         RegistrationScreen.id: (context) => const RegistrationScreen(),
+        LoginScreen.id: (context) => const LoginScreen(),
       },
     );
   }

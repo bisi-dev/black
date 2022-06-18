@@ -1,6 +1,8 @@
-import 'package:black/screens/registration_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:black/core/app_export.dart';
+
+import 'package:black/screens/login_screen.dart';
+import 'package:black/screens/registration_screen.dart';
 
 class IntroScreen extends StatefulWidget {
   const IntroScreen({Key? key}) : super(key: key);
@@ -57,6 +59,7 @@ class _IntroScreenState extends State<IntroScreen>
               title: 'Log In',
               colour: kLogoGradLight,
               onPressed: () {
+                Navigator.pushNamed(context, LoginScreen.id);
               },
             ),
             RoundedButton(
