@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 import 'package:black/core/app_export.dart';
+import 'package:black/screens/room_screen.dart';
 
 class RegistrationScreen extends StatefulWidget {
   const RegistrationScreen({Key? key}) : super(key: key);
@@ -74,6 +75,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   try {
                     await _auth.createUserWithEmailAndPassword(
                         email: email!, password: password!);
+                    Navigator.pushNamed(context, RoomScreen.id);
                     setState(() {
                       showSpinner = false;
                     });

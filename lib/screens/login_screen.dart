@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+
 import 'package:black/core/app_export.dart';
+import 'package:black/screens/room_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -72,6 +74,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 try {
                   await _auth.signInWithEmailAndPassword(
                       email: email!, password: password!);
+                  Navigator.pushNamed(context, RoomScreen.id);
                   setState(() {
                     showSpinner = false;
                   });

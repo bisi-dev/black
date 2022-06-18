@@ -4,6 +4,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:black/screens/intro_screen.dart';
 import 'package:black/screens/registration_screen.dart';
 import 'package:black/screens/login_screen.dart';
+import 'package:black/screens/room_screen.dart';
 
 void main () async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,7 +23,9 @@ class BlackApp extends StatelessWidget {
         IntroScreen.id: (context) => const IntroScreen(),
         RegistrationScreen.id: (context) => const RegistrationScreen(),
         LoginScreen.id: (context) => const LoginScreen(),
+        RoomScreen.id: (context) => const RoomScreen(),
       },
+      debugShowCheckedModeBanner: false,
     );
   }
 }
