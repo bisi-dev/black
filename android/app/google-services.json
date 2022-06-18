@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "780480718657",
+    "project_id": "black-bb",
+    "storage_bucket": "black-bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:780480718657:android:a3bbbf7fec3fa7fd8e63c0",
+        "android_client_info": {
+          "package_name": "dev.bisi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "780480718657-vet2509a31k2r6e1231rvqdpmastg47b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYi2Jc8dzCaUt4oUgkUa-Pmzp2bTq2Ivk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "780480718657-vet2509a31k2r6e1231rvqdpmastg47b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
